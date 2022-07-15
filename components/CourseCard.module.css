@@ -1,0 +1,12 @@
+#main{
+    padding: 10px;
+    margin: 20px;
+    width: 320px;
+    align-Items: center;
+    border: 1px solid red;
+    background: linear-gradient(180deg, rgba(238,0,202,1) 0%, rgba(148,187,0,1) 100%);
+}
+
+#title{
+    margin: 0;
+}

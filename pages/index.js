@@ -15,7 +15,7 @@ export default function Home() {
             <Head>
                 <title>Hoos Here</title>
             </Head>
-            <Header></Header>
+            <Header />
             <div className={styles.main}>
                 <h1>
                     This is a demo of <b>Hoos Here</b>

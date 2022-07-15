@@ -1,19 +1,23 @@
-import styles from '../styles/index.module.css'
-import Image from 'next/image'
+import styles from './Header.module.css'
 import { logoPic } from '../public/hoos-here-logo.png'
+
+import Image from 'next/image'
 
 export default function Header(){
     console.log("Logo: "+logoPic);
     return(
         <>
-            <div>
-                <header>
-                    <img
+            <header id={styles.main}>
+                <div id={styles.left}>
+                    <img id={styles.logo}
                     src={logoPic}
-                    alt="Hoos Here Logo" />
-                    <p>Test</p>
-                </header>
-            </div>
+                    alt="🐦" />
+                    <h1 id={styles.title}>Hoos Here</h1>
+                </div>
+                <div id={styles.right}>
+                    <p>Profile 🧑</p>
+                </div>
+            </header>
         </>
     );
 }

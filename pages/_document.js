@@ -11,9 +11,9 @@ class MainDocument extends Document {
             <Html>
                 <Head />
                 <body>
-                <Main />
-                <div id="modal-root"></div>
-                <NextScript />
+                    <Main />
+                    <div id="modal-root"></div>
+                    <NextScript />
                 </body>
             </Html>
         );
