@@ -20,7 +20,7 @@ export default function Home() {
                 <h1>
                     This is a demo of <b>Hoos Here</b>
                 </h1>
-                <button onClick={() => router.replace('/dashboard')}>
+                <button onClick={() => router.push('/dashboard')}>
                     Go to demo
                 </button>
             </div>

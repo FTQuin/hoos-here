@@ -15,7 +15,10 @@ export default function Course(classData) {
             <Header />
             <div id={styles.main}>
                 <h1>{course_name}<span>⚙️</span></h1>
-                <StudentList />
+                <div id={styles.stud}>
+                    <StudentList />
+                </div>
+                
             </div>
         </>
     );

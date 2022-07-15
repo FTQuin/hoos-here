@@ -12,7 +12,7 @@ let students_init = {
     "1234": {
         name: "Jeff",
         attendence: {
-            [dates_init[0]]: 0, [dates_init[1]]: 1,
+            [dates_init[0]]: 0, [dates_init[1]]: 2,
         }
     },
     "1111": {
@@ -22,7 +22,7 @@ let students_init = {
         }
     },
 };
-let values_init = ["❌️", "✔️", "🟢"];
+let values_init = ["❌️", "✔️", "🟡"];
 
 let dataset_init = {
     "dates" : dates_init,
@@ -84,7 +84,7 @@ export default function StudentList() {
                         <tr>
                             <td></td>
                             {dates.map((date) => (
-                                <td key={date} className={styles.date}><p>{new Date(date).toDateString()}</p></td>
+                                <td key={date} className={styles.date}><p>{new Date(date).toLocaleDateString('en-CA')}</p></td>
                             ))}
                             <td onClick={addDate}>➕</td>
                         </tr>

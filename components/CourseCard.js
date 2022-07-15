@@ -12,11 +12,11 @@ export default function CourseCard({course_name}) {
         <>
             <div id={styles.main}>
                 <h4 id={styles.title}>{course_name}</h4>
-                <button onClick={() => router.replace('/attendance/'+course_name)}>
+                <button onClick={() => router.push('/attendance/'+course_name)}>
                     Take attendance
                 </button>
                 <br/>
-                <button onClick={() => router.replace('/course/'+course_name)}>
+                <button onClick={() => router.push('/course/'+course_name)}>
                     Course Summary
                 </button>
             </div>
