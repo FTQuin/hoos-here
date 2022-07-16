@@ -6,8 +6,14 @@ import Image from 'next/image'
 import styles from "./attendance.module.css"
 import Header from "../../components/Header";
 
+import {useRouter} from "next/router";
+
+
+
 
 export default function Attendance(classData) {
+    
+    const router = useRouter();
     let user = true;
     return(
         <div>
@@ -17,6 +23,9 @@ export default function Attendance(classData) {
             <Header />
             <div id={styles.main}>
                 <Image src={qr_code} />
+            <button onClick={() => router.push('/attendance/')}>
+                Student View
+            </button>
             </div>
             </>
             }
