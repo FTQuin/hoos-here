@@ -17,4 +17,9 @@ a {
   box-sizing: border-box;
 }
 
+button {
+  border-radius: 5px;
+  background-color:lightcyan;
+}
+
 

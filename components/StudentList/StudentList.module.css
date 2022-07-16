@@ -9,6 +9,10 @@
 }
 .date p{
     transform: rotate(30deg);
+    word-break: keep-all;
+    word-wrap: unset;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .entry p{

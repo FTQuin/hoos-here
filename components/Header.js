@@ -2,7 +2,7 @@ import styles from './Header.module.css'
 import logoPic from '../public/hoos-here-logo.png'
 
 import Image from 'next/image'
-import { Router, useRouter } from 'next/router';
+import { Router, useRouter } from 'next/router'
 
 export default function Header(){
     
@@ -13,14 +13,16 @@ export default function Header(){
         <>
             <header id={styles.main}>
                 <div id={styles.left} onClick={() => router.push('/')}>
-                    <Image id={styles.logo} src={logoPic}
-                    height = "100%"
-                    width = "100%"
-                    alt="🐦" />
+                    <Image
+                        id={styles.logo} src={logoPic}
+                        height = "100%"
+                        width = "100%"
+                        alt="🐦"
+                    />
                     <h1 id={styles.title}>Hoos Here</h1>
                 </div>
                 <div id={styles.right}>
-                    <p>Profile 🧑</p>
+                    <p>Mark Adam 🧑</p>
                 </div>
             </header>
         </>

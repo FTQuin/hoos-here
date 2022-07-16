@@ -76,6 +76,25 @@ export default function StudentList() {
         })
     }
 
+    useEffect(() => {
+        setStudents(old_students => {
+            return old_students;
+        });
+    }, [students]);
+
+    function addStudent(){
+        return setStudents((past_students) => {
+            let new_students = past_students;
+            // return new array of dates
+            students["9999"] = {
+                name: "Mark",
+                attendence: past_students['1111']["attendance"],
+            }
+            console.log(students);
+            return students;
+        });
+    }
+
     return(
         <>
             <div id={styles.main}>
@@ -91,6 +110,9 @@ export default function StudentList() {
                         {Object.keys(dataset.students).map((id) => (
                             <StudentRow key = {id} student_id = {id} dataset = {dataset} setDataset = {setDataset}/>
                         ))}
+                        <tr>
+                            {/* <td>➕</td> */}
+                        </tr>
                     </tbody>
                 </table>
             </div>
